@@ -4,14 +4,6 @@ namespace TASK3_RPS.Classes
 {
     internal class Rules : IRules
     {
-
-        //n = количество ходов
-        //p = n-1 половина от количества ходов
-        //a = игрок 1
-        //b = ход компьютера
-        // (a - b + p + n) % n - p;
-        //Console.WriteLine(Math.Sign((2 - 2 + 1 + 3) % 3 - 1));
-
         public int WinnerIdentification(int moves, int computerMove, int playerMove)
         {
             decimal halfMoves = (moves - 1) / 2;
@@ -21,7 +13,6 @@ namespace TASK3_RPS.Classes
 
         public string GameResult(int result)
         {
-            //TODO поменять название переменной;
             string res = string.Empty;
             switch (result)
             {
